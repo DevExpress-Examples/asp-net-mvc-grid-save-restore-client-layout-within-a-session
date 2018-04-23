@@ -1,0 +1,39 @@
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "gv";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+
+    settings.Settings.ShowFilterBar = GridViewStatusBarMode.Visible;
+    settings.Settings.ShowFilterRow = true;
+    settings.Settings.ShowGroupPanel = true;
+    settings.SettingsBehavior.EnableCustomizationWindow = true;
+    settings.SettingsContextMenu.Enabled = true;
+
+    settings.KeyFieldName = "ID";
+    
+    settings.Columns.Add("ID");
+    settings.Columns.Add("Text");
+
+    settings.CustomJSProperties = (s, e) => {
+        MVCxGridView gridView = (MVCxGridView)s;
+        e.Properties["cpClientLayout"] = gridView.SaveClientLayout();
+    };
+
+    settings.ClientLayout = (s, e) => {
+        switch (e.LayoutMode) {
+            case ClientLayoutMode.Loading:
+                //Load Last ClientLayout Via First Load
+                if (Session["Layout"] != null) {
+                    e.LayoutData = Session["Layout"].ToString();
+                }
+                break;
+            case ClientLayoutMode.Saving:
+                //Save Last ClientLayout Automatically
+                Session["Layout"] = e.LayoutData;
+                break;
+        }
+    };
+    
+    settings.ClientSideEvents.Init = "OnInit";
+    settings.ClientSideEvents.EndCallback = "OnEndCallback";
+    
+}).Bind(Model).GetHtml()
