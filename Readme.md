@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/DXWebApplication1/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/DXWebApplication1/Controllers/HomeController.vb))
+* **[GridViewPartial.cshtml](./CS/DXWebApplication1/Views/Home/GridViewPartial.cshtml)**
+* [Index.cshtml](./CS/DXWebApplication1/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # GridView - How to programmatically Save/Load the last ClientLayout within the Session
 
 
