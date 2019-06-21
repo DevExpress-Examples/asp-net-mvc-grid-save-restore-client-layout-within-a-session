@@ -6,6 +6,9 @@
 * [Index.cshtml](./CS/DXWebApplication1/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # GridView - How to programmatically Save/Load the last ClientLayout within the Session
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t205817)**
+<!-- run online end -->
 
 
 This example is based on the <a href="https://www.devexpress.com/Support/Center/p/T146962">T146962: GridView - How to track ClientLayout with a separate ListBox</a> one. It illustrates how to programmatically Save/Load the last ClientLayout within the Session. In real scenarios, it is possible to use a real database (for example, with a client profile data) instead:<br /><br />
