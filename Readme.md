@@ -7,7 +7,7 @@
 <!-- default file list end -->
 # GridView - How to programmatically Save/Load the last ClientLayout within the Session
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t205817)**
+**[[Run Online]](https://codecentral.devexpress.com/t205817/)**
 <!-- run online end -->
 
 
