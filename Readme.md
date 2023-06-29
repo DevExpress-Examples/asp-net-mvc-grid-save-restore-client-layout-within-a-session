@@ -9,7 +9,7 @@ This example demonstrates how to handle the grid's [ClientLayout](https://docs.d
 
 ## Overview
 
-Handle the grid's server-side [ClientLayout]() event and do the following in the handler:
+Handle the grid's server-side [ClientLayout](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridBase.ClientLayout) event and do the following in the handler:
 * Set the [LayoutMode](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxClientLayoutArgs.LayoutMode) argument property to `Saving` to save the current client layout to a session.
 * Set the [LayoutMode](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxClientLayoutArgs.LayoutMode) argument property to `Loading` to restore the last client layout from the session.
 
